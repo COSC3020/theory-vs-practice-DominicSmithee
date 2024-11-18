@@ -24,4 +24,9 @@ Misleading Analysis
 - You might just be wrong about the found asymptotic analysis due to other factors, such as recursion being confusing and runtime analysis being generally difficult to grasp
 
 Input Size Asymptotic Complexity
-- Finding an element in a binary search tree of 1,000 elements could take 5 seconds. The same element in a tree of 10,000 elements will obviously take longer, but not by much. Search in an binary tree has the complexity of O(logn), where n is the number of nodes. O(log(1000)) = 3 where O(log(10,000)) = 4 and O(log(100,000)) = 5. Judging by how each solution changes by +1, and 1000 elements takes 5 seconds (3*2)-1 = 5, I would assume 10,000 elements takes (4*2)-1 = 7 seconds roughly. 
+- Finding an element in a binary search tree of 1,000 elements could take 5 seconds. The same element in a tree of 10,000 elements will obviously take longer, but not by much. Search in an binary tree has the complexity of O(logn), where n is the number of nodes. O(log(1000)) = 3 where O(log(10,000)) = 4 and O(log(100,000)) = 5. Judging by how each solution changes by +1, and 1000 elements takes 5 seconds (3 * 2)-1 = 5, I would assume 10,000 elements takes (4 * 2)-1 = 7 seconds roughly. 
+
+Increased Asymptotic Complexity
+- The time could be quite longer than expected due to hardware errors such as allocating memory for the cache incorrectly or other background processes affecting cpu usage.
+- The input data could be organized in a way that it is worse than worse-time complexity due to errors such as cache misses or memory leakage.
+- Multiple threads running in the algorithm may affect runtime due to misuse of locks. This would produce inconsistent runtimes.
