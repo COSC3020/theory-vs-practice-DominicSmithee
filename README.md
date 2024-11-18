@@ -1,5 +1,5 @@
 I used geeksforgeeks article Complexity of Different Operations of Binary Tree, Binary Search Tree, and AVL Tree to see what the asymptotic complexity of search in a binary tree is. 
-
+I used claude.ai to learn more about how algorithms might not run as fast in practice. 
 # Theory vs. Practice
 
 - List 3 reasons why asymptotic analysis may be misleading with respect to
